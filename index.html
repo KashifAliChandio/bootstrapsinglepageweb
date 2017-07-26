@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i" rel="stylesheet">
+    <script src="js/jquery1.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <!-- <script src="js/juuery1.2.js"></script> -->
+    <script >
+      
+      $(document).ready(function(){
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1500);
+       return false;
+      }
+    }
+  });
+});  </script>
+    <style>
+</style>    
+<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                   <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+               </button>
+                <a href="#" class="navbar-brand">The Design Store</a>
+            </div>
+            <div class="collapse navbar-collapse" id='main-navbar'>
+                <ul class="nav navbar-nav">
+                    <li><a data-scroll href="#home"> <strong>Home</strong></a></li>
+                    <li><a data-scroll href="#services"><strong>Services</strong></a></li>
+                    <li><a data-scroll href="#testimonials"> <strong>Testimonials</strong></a></li>
+                    <li><a data-scroll href="#team"><strong>Team</strong></a></li>
+                    <li><a data-scroll href="#portfolio"><strong>Portfolio</strong></a></li>
+                    <li><a data-scroll href="#contact"><strong>Contact</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron" id="home">
+        <div class="container-fluid">
+            <h1>Home Page</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+                at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                as opposed to using 'Content here, content here'.
+            </p>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even slightly believable. If you are going to use a
+                passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
+                the first true generator on the Internet.
+
+            </p>
+            <p><a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login">My Account</a></p>
+        </div>
+
+    </div>
+
+    <div id="services">
+        <div class="container-fluid">
+            <div class="page-header">
+                <h1>Our Services <small>for you</small></h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/services/s1.png" alt="img1" width="50px" height="50px">
+                    <p class="lead">Phototyping</p>
+                    <p class="info">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters,</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/s2.png" alt="img1" width="50px" height="50px">
+                    <p class="lead">Phototyping</p>
+                    <p class="info">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters,</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/s10.png" alt="img1" width="50px" height="50px">
+                    <p class="lead">Phototyping</p>
+                    <p class="info">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters,</p>
+                </div>
+            </div>
+            <!-- second row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/services/s4.png" alt="img1" width="50px" height="50px">
+                    <p class="lead">Phototyping</p>
+                    <p class="info">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters,</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/s5.png" alt="img1" width="50px" height="50px">
+                    <p class="lead">Phototyping</p>
+                    <p class="info">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters,</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/s6.png" alt="img1" width="50px" height="50px">
+                    <p class="lead">Phototyping</p>
+                    <p class="info">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters,</p>
+                </div>
+            </div>
+            <!-- third row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/services/s7.png" alt="img1" width="50px" height="50px">
+                    <p class="lead">Phototyping</p>
+                    <p class="info">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters,</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/s8.png" alt="img1" width="50px" height="50px">
+                    <p class="lead">Phototyping</p>
+                    <p class="info">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters,</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/s9.png" alt="img1" width="50px" height="50px">
+                    <p class="lead">Phototyping</p>
+                    <p class="info">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters,</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="testimonials">
+        <div class="container-fluid">
+            <h1>Testimonials</h1>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eius id dolorum fugit. Eaque esse minima
+                    magnam tenetur odio officia impedit, pariatur vero, quos voluptatibus alias delectus reiciendis doloremque
+                    a.
+                </p>
+            </blockquote>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laboriosam ab maxime placeat minima mollitia.
+                    Provident aspernatur impedit vitae sequi harum ex, temporibus consequuntur quo distinctio? Quas autem
+                    quibusdam, quisquam.</p>
+            </blockquote>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laboriosam ab maxime placeat minima mollitia.
+                    Provident aspernatur impedit vitae sequi harum ex, temporibus consequuntur quo distinctio? Quas autem
+                    quibusdam, quisquam.</p>
+            </blockquote>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laboriosam ab maxime placeat minima mollitia.
+                    Provident aspernatur impedit vitae sequi harum ex, temporibus consequuntur quo distinctio? Quas autem
+                    quibusdam, quisquam.</p>
+            </blockquote>
+        </div>
+    </div>
+    <div id="team">
+        <div class="container-fluid">
+            <div class="page-header">
+                <h1>Our Team <small>Of experts</small></h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img data-toggle="tooltip" data-placement="bottom" title="Bob Jones" src="img/team/t1.png" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img data-toggle="tooltip" data-placement="bottom" title="Bob Jones" src="img/team/t2.png" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img data-toggle="tooltip" data-placement="bottom" title="Bob Jones" src="img/team/t3.png" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img data-toggle="tooltip" data-placement="bottom" title="Bob Jones" src="img/team/t4.png" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+            </div>
+
+            <!-- second row -->
+            <div class="row">
+                <div class="col-md-3">
+                    <img data-toggle="tooltip" data-placement="bottom" title="Bob Jones" src="img/team/t5.png" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img data-toggle="tooltip" data-placement="bottom" title="Bob Jones" src="img/team/t6.png" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img data-toggle="tooltip" data-placement="bottom" title="Bob Jones" src="img/team/t7.png" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img data-toggle="tooltip" data-placement="bottom" title="Bob Jones" src="img/team/t8.png" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+            </div>
+            <!-- thir row -->
+            <div class="row">
+                <div class="col-md-3">
+                    <img data-toggle="tooltip" data-placement="bottom" title="Bob Jones" src="img/team/t9.png" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img data-toggle="tooltip" data-placement="bottom" title="Bob Jones" src="img/team/t10.png" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/team/t11.png" data-toggle="tooltip" data-placement="bottom" title="Bob Jones" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/team/t12.png" data-toggle="tooltip" data-placement="bottom" title="Bob Jones" alt="img 2" width="60px" height="60px">
+                    <p class="lead">CEo and Co-Founder</p>
+                    <p class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ut reiciendis recusandae. Vero,
+                            quos asperiores illum. Amet nostrum hic voluptatum tempora dolor obcaecati cupiditate eaque quos,
+                            repudiandae voluptatibus. Voluptate, provident.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="portfolio">
+        <div class="container-fluid">
+            <h1>Our Portfolio</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro esse ad aperiam quis repudiandae eos ab, laboriosam
+                mollitia quasi quas commodi suscipit excepturi neque nulla tempore, reiciendis labore error magnam!
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quibusdam, odio aut iure, incidunt eius qui quisquam
+                numquam nisi omnis, tempora neque aliquid asperiores dignissimos voluptatum assumenda modi? Modi, facere.</p>
+            <p> <a href="#" class="btn btn-primary btn-lg">View Our portfolio</a></p>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container-fluid">
+            <div class="page-header">
+                <h1>Contact <small>any time</small></h1>
+            </div>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" name="Name" required>
+
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" name="Email" required>
+
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Phone" name="Phone" required>
+
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Address" name="Address" required>
+
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Subject" name="Subject" required>
+                </div>
+
+
+                <div class="form-group">
+                    <textarea name="Message" cols="30" rows="10" class="form-control" placeholder="Message"></textarea>
+                </div>
+                <input type="submit" class="btn btn-primary btn-lg" value="Submit">
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer started -->
+    <footer>
+        <div class="container-fluid">
+            <a data-scroll href="#home">Home</a>
+            <a data-scroll href="#services">Services</a>
+            <a data-scroll href="#testimonials">Testimonials</a>
+            <a data-scroll href="#team">Team</a>
+            <a data-scroll href="#portfolio">Portfolio</a>
+            <a data-scroll href="#contact">Contact</a>
+
+        </div>
+    </footer>
+    <div class="modal fade" id="login" tabindex="1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="muModal">Login or Registers</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                          <div class="form-group">
+                            <input type="password" class="form-control" placeholder="password">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn -btn-primary" value="submit" >
+                            <input type="submit" class="btn -btn-primary" value="Register" >
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">
+                        Forget Password
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/bootstrap.min.js"></script>
+<script> 
+
+</script>
+</html>
